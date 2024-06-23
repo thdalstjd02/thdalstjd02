@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>포지션</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .representative-container {
+            text-align: center;
+        }
+        .representative-image-wrapper {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        .representative-image {
+            width: 150px; /* 원하는 너비로 조정 */
+            height: auto;
+            border-radius: 8px; /* 이미지에 둥근 테두리 추가 */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 이미지에 그림자 효과 추가 */
+            cursor: pointer; /* 마우스를 올렸을 때 포인터로 변경 */
+        }
+        .player-name {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        /* 추가된 스타일 */
+        .nba-logo {
+            position: fixed;
+            top: 50%; /* 페이지 상단에서 세로 중앙으로 위치 */
+            right: 20px; /* 페이지 우측에서 20px 떨어진 위치 */
+            transform: translateY(-50%);
+        }
+        .nba-logo img {
+            width: 100px; /* 이미지 너비 */
+            height: auto; /* 비율에 맞게 높이 자동 조정 */
+            border-radius: 8px; /* 이미지에 둥근 테두리 추가 */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 이미지에 그림자 효과 추가 */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1><a href="index.html">BASKETBALL MANIA</a></h1>
+        <nav>
+            <ul>
+                <li><a href="representative.html">대표자 소개</a></li>
+                <li><a href="position.html">포지션</a></li>
+                <li><a href="matching.html">매칭 서비스</a></li>
+                <li><a href="customer-service.html">고객센터</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="position" class="representative-container">
+            <div class="representative-header">The Best Players Of The Positions</div>
+            <div class="representative-content">
+                <div class="representative-text">
+                    <p></p>
+                    
+                    <div class="representative-image-wrapper">
+                        <div>
+                            <p>P G</p>
+                            <a href="https://youtu.be/NHhTMh0nURA?si=iW4tMWkYbY2UXEfk" target="_blank">
+                                <img src="https://i.pinimg.com/originals/c4/e2/b9/c4e2b96a7221c42a491ebef35705e411.jpg" alt="Stephen Curry" class="representative-image">
+                            </a>
+                            <p class="player-name">Stephen Curry</p>
+                            
+                        </div>
+                        <div>
+                            <p>S  G</p>
+                            <a href="https://youtu.be/YeeDMFF9WUk?si=ShoNUf6SIBf8pkH8" target="_blank">
+                                <img src="https://i.pinimg.com/originals/ac/cb/9c/accb9c06e29aefe8685731743805605a.jpg" alt="James Harden" class="representative-image">
+                            </a>
+                            <p class="player-name">James Harden</p>
+                        </div>
+                        <div>
+                            <p>S  F</p>
+                            <a href="https://youtu.be/H0lvVOFt7-A?si=g2DzzrTvHWvTSOlg" target="_blank">
+                                <img src="https://i.pinimg.com/originals/36/70/2b/36702beecc03e73ac9c084fe64d82836.png" alt="Giannis Antetokounmpo" class="representative-image">
+                            </a>
+                            <p class="player-name">Giannis Antetokounmpo</p>
+                        </div>
+                        <div>
+                            <p>P  F</p>
+                            <a href="https://youtu.be/0ufyaXWbsnc?si=DZNRaIJE84Rm_ai1" target="_blank">
+                                <img src="https://i.pinimg.com/originals/db/11/be/db11be5e0186d91196e9131d8b0e9931.jpg" alt="Anthony Davis" class="representative-image">
+                            </a>
+                            <p class="player-name">Anthony Davis</p>
+                        </div>
+                        <div>
+                            <p>C</p>
+                            <a href="https://youtu.be/92YHUU9CbRU?si=a5IsrsmHKmad0cfF" target="_blank">
+                                <img src="https://i.pinimg.com/originals/d1/f8/e0/d1f8e02f647312c9d9bdb646a3e68a73.jpg" alt="Dwight Howard" class="representative-image">
+                            </a>
+                            <p class="player-name">Dwight Howard</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; ♠ FOREVER BASKETBALL ♠</p>
+    </footer>
+
+    <!-- NBA 로고 추가 -->
+    <aside class="nba-logo">
+        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISEhUSEhIVFRUVGBUYFxcVFxoYFxUVFxcYFxcVFRcYHiggGBolGxcXIjEhJSkrLi4uFx8zODMsNyguLisBCgoKDg0OGhAQGC0dHyYyKystNS0rLS0rNS0vLSs1LSstLS0tLS0vLSstKy8tLS0tLS0tLS0tLSstKy0tLSstLf/AABEIAOkA2AMBIgACEQEDEQH/xAAcAAACAgMBAQAAAAAAAAAAAAAAAQIHAwYIBQT/xABQEAABAwEEBgUGCQgJAgcAAAABAAIRAwQhMVEFBxJBYfAGcYGRoRMUIjKx0SMlQlJTcsHh8SQzNGJjc3SSFRdDVIKTorPSssMWJjU2RIPT/8QAGwEBAAIDAQEAAAAAAAAAAAAAAAEEAgMFBgf/xAA2EQACAQMBBAcECgMAAAAAAAAAAQIDBBEhBRIxcRMyQVGBkbE0YXLBBhQiM0JSodHh8BUj8f/aAAwDAQACEQMRAD8ApPaIw3XzzzekU0BSAA57U2oCZQgYCxOCySoOKEkEIQgGhACaAJQEJoATSHPWpNHOaAe12pbKaJhAEoTKigHKNpJCEAhCCgJAqbVilTaVJJJzVEtU5USUIMRQmUISJNJSUAE3NQmUBhcoLLUCxqACYCSk1ATpU3PcGsaXOcYAaJJJwAAxKtPorqWr1mh9sq+RB/s2AOqR+s43NOOAK9zU10VpWezHSdpEOcHOYXD83SHygN5d7IjFfN0l6W2i2PLQ59Khi2mwkEtvINUiC4wLxgJukiTYoW8qr04GupUUD0n6mdGAwbVVByNSmD3bKmNS2jd1qrH/AOxnVuatF2G7UBo3ExOQIFxzGXuOOvSbMFov/VF/pE3Nk34/duuf45fm/T+TR9Z9xvp1LaO/vNb+dnuQdSejzhXtHY6n/wAVXT7K3EtZc0kx5M/Jk/Z+EE350K6P0bHZ2BlNraj2NdVeANpz3XkEgYAkgDDtMrRcWqorO9nw/k2U6u++BpA1JWDfaLT2vp/8FP8AqRsH94tH87P+CsjSmjKVopupVmB7XDeCSDGLTEhwzCpTpFoEWW0VKPrBpBaYvLXAOE3gTfBjK6MFz6k3HXB2dnWELyTh0m7Ja8M6eaPfq6jbGQfJ2q0B24nYcOsjZE96rzplqzttgBqQK1EY1KYILRm9l5aON4uXs2R2w7aadgjAtOy4HrBkfjxW+9EOmb3PbZrU4PD/AEW1DG1tGAGvu9IHAOxvEyLxhGum8PQt3ewatGDnCW/jjph/M5zQrG1y9Dm2K0Nr0G7NCuTLRhTq4loyDheBwKrlbzhAkU1FANAKEICQcpArGFIICRHahShCkgxgKSGolQSMb0c705TchBhqBYiFlesaEihSOCSCoB01rFAs+jKVCmA1m3QpREDYYC4C44egPvwVS17S4GXEC4b27yRPpE3QerxKtfW84eZUsD+UM3N+jq4b9xwvVTPc64zlge2SA2Ricu3AdywX+rxKNfrjfWlw2Q0i7GLxdj6M4x4cFl29pxOEYi/c45NG8DEd0L5rQ94gGRcLocbw044Yb915xErFUpbR9I4k7sJMD1ncN+fVFxo0nudEmUq9roUax9B7tl0FwJlp2W7QAIl8C6Dfdfh0G1oAjcLh1DDeudujmha9S1UGMpVC01KZc4UzshgcHPJcbo2Z7bsYnoWJ5GfvXI2g8yWpbt1hMmCHC4+zK/EqkeltrdVttoL4EVHNF4uFP4MCYN8N7yrD6edJTYqQFIjy1W5u/YZg6pA33gDjnBCqhzpvvv33mZzO8/fxXGry/Cey+j1rJKVeS0ei89fQk248nf1KdSSPldk5dfPeimQPWIPX97ufZI1qYHyfAbgOezgqx6Zm86xmi06AdVqCX+SoVZyftskicwXd65wXSPSiqD0bfh+jUsPrs4Lm1dGPA+a14qNWSXe/UZSQhSahoQhACYSTagMzU0NQpIIAJDdzkkCmOpQSSHu3qJ596NrnuUZQEXKKmoFARJQkpNUA6X1uSbDTEn8+3c4zFOpdd1b7uxU5Uru2Yg4i44Yxf6U5i/71buuf9EomB+kNy+iq33n7DvVU6EsDrRaKdmYfSquABkS1t7nOIiCAxpOUDJdyxaVHL95SrazNx1edCxawLTafzDXDYYIBqubAMuBnYBG7E5RBtux6Ls1IbNOjRYMmsYMxfAvunmVOw2anQpMo0hDKbWtaMmtAF915zPE9azbfX485Ll17iVWWezsLMIKKwZNrns6ufYB/N/uWJ2fv96bRfzn1rQZmhdNugj676lpo1HOeYJpvkzAwpOuj6pzxCrSz1XMcWPEEXEOEEEY3HAyF0cBzdktd6Y9EaVtpktaG12j0H4THyHxi03i/CetV6lHOsT0WzNtOlilW1jwT7v3X68ynKdLamSOyM8wFF9m4+JyO6OJ5mJiWkh0hwJBnakEGCOscfcvq2doTI5HE8+2qewbN36S0z/4cdAP6LTzwDmn2Lm6V01ptk9HagysZy3Nn7FzOSuhHgj5rc/fT5v1IpoQsjQCEIQAmxKEwgPoakmDckhBgTJUAnchI00JlAICVGopqFRAYkwkmVAOjddL/AMipfxDez4OtfcJ7l5mpjQjtqpbni6DSpY3kkuquF14wbI/X3hetrjpvqWaz0qbdp1S1MY0EuALnU6rReI3kHK7qW4aE0eyy0Kdnpj0abQ2YjaMek4gnFzpJ6+1Xul3bZRXa35GjczUyegZ5BS2eY95UTVHMZjn71E1Mo8OOQ59tI2mZoERd4ZJFw56+pQY/r8fdz7M883oSQp1Th703VTjl1+9Vl046eVKVR9nsoAcw7L6pAMEes1jTIuNxJyN282JYK4q02VGxD2NcMPlAEe3krBTTbSLVazq0acak1hS4FKdPqQZb64EAOcH7sXta5x/mLu/rXjUrQ5uBu6x7ufZtWsqgW29xPyqdNwM4j1ZMDNpu4LWTs7yZ4bWR6uPMqjNYkz39hLftabf5V6FrW189Hqn8DVz+jdwXMi6YtIH/AIfqRh5lW/238VzPKvx6qPn119/Pm/UEQhSAWRoIpoKYQAhOEkBMFCGoQGEFMJFOUBIBBSCYQBKVRBKg8oCCk0TAUVls49JvWPaoB1hp5tM1rDt3RaXbGF7/ADe0bM48e2F7Oz1eGXDnsVea5ra+jZ7NVpOLXstTHMIi5zadWLovv6wV82rjpRpO31C+qaPm1MlryGFr3v2TstYRvB2XExgczda6BukqmdDXva4LNge3nDnxUo6/HnnqXyPq9fcffz1KPlurw96rGR9D2jkH7Tz7fi05pgWWz1axg7DSWi695MMHa4jv7su3N13+nhzyF8GnNDstdF1CoXbLr5abw4YG4XxkVDzjQ2UnDfjv8MrPLtKLfV2jtFxJcZJukkkkk3ZlXpq9tnlNH0DvYDTOPyHFo3fN2VQ9rszqNR9N/rMc5rscWuIKsLVFpwNNSyPu2vhWTvIDQ9t5yAP+FypUJYnhnstt0ultN6PY0/D+vJ9muSzGbPWAMEPpnHGQ5ox+t3d1aeSuw57Sr76SaKba7NUomJIlh9G57ZLTjnceBKoMVtm449nG7BTcRxLL7TL6P3Ualt0b4x9Hqvn5Frv/APb1T+Dr5fNqc8lc3FdJeVB6PVMf0O0/9NTgubFbh1UeRu/aKnxS9WNSaoKbQsiuBQEOCQQGQILUgpSgJC5Ci7n2poDAEyeKXPgnj3IASR2oQCUHFTlYygBZbL67frN9oWJZrJ+cZ9ZvtCgF/a9ATY6MA/pIz+jqjgva1YaLdT0ZZ7r3h9U3fSPcRifm7I7F4evV5FkoYD8pbl9HUzkLYtW+kRV0bZiLtmmKZ9X1qRNM5/NB6iOCuy9ljzNX4jY/M8/YM1NllGfs+wLJ5fioOrdf+rnnNUzMmKXb3/YFOOb1i25/D7+fajzhzz1oCoNalgFO2eUAgVmNd/iA2HC88Gnt79X0fbDRqMq0yNtjg5uUi+DvIOB61Y2t+izzei4kbTahDfquYS4XCBe1i9XoF0RZZaTatRu1aHAEkgnyU/Ibkcz17lTlTbqNLmevt9qU6Wz4uot56xx34+WOJtVhqirTp1Wgt22tdsuuLZEwREgjDs76J6W2J1G212ER8I5zZBva8lzesQ5dAB5PJ+0r49N6Eo2un5Ku3abiNzmu3OaZuN/OB31ae+ji7M2grSq5OOYvT+95pjGf+X6n8Has/m1VzeV07pLRps+hbTQdG1Ts1sbdHpCKuy7tEHt61zAFnFYikUrmSlWnJcG2/wBSQWULC1ZQsjSMhIhDipIQJSKRCCUAiUJoQkxEoKiUwgAlRKcpIAlQKkoqAMLNZR6bPrN9qwrNZfXZ9ZvtQF8683fkdGB/8luEfR1cgtd1L9ITTqvsTyQ2tL6RvjyoB2mzHymjvZmVs2vU/kVH+Jbn9HVVK2Su6m9tSmdl7C1zHD5LmkuBEnMc7+za0elt91+80SeGdUAEZ+PDPnsUwZ/D3leToDpJZbZTpllaiar2Ne6kHsNRhIDnNLJ2vRJIXsimMR7R9nPYuTKLi8M2GEc4c89Sz0zx8ePAIFI8z7kywjPxz6+e5QSeF0vsTa1Bu0J8nWoPvkjZFRrXz/gc/wAeK94uPP48+C+TS1k8rQqsPy6b2zvG00i6/mF5HQvpHTt1EekBWYB5VlwM/PAxLSb+Ex14ZSlzLG7OdHK1UX5Z/wCHvOtUbrs/R8efBSZbgd457FkbTy9vuHPgvi0lVo0qbq1R4ZTaL3Ekggi7Zj1iZuAx3XLLQ0KLk8LVnx9MKs2G1/w9oz+idw59vJq6ZtFtNp0TabRBAfRtmyDiGNFVrZvxgCcbz1RzMFCaayjOcJQk4y4rRjasrFiBU2lSYkjj3exSaonFMIBo59qColCCUoUfv70ISY0SglIlACEigoBqKaSgAFlsvrt+s32rEstm9dn1h7QgL916/oVGcPOmf7dXP7VRzTduw/Vydw57ld+vFw8zox/emYR9HV+aqTxG/AfO+YefuXf2es0fM0T4n2aH0rUs1enaKR9Om7aEzB9UFpgXgtkHgTwnpzo/pina6FO0Uidl4mDMtcJDmO4gyOxcrhuN3gc24SeZW7as+l3mVfyNUxZ6xvmIpVCS0VPWuFwDuAB3XxfW3SR3lxREJYOhDV7eetNtYcPD3r4mzw8Oec1kDZ3+PuHPt4ZuM7nN5+4LnS206lltL2tLmPpPc0FpLXCDEgiIu8CuhW0njfI63c89arLWtoMhwtjBcYZV+tHoPxNxHomYwbmqt1BuOV2Hc2DcRp1nTnwlp4/zqeFR6f6RAjy+1ul1NhOWJbPevJ0npmvaCDXquqRMB0bLfqtwb2Bec13Nyntc9nUqLqSfFnsKVrQpvehBJ+5JFq6IPxBU42e25Z1ueSucwc+cl0boNpOgan7i2Z51VziupT6i5I+f33tVX4perGFIFRCkFmVSUqQUJUhH3oBgpOTBPf47+28DuUSUAucEIlCAgkU0OQCQhJQBpJpIAWSz+u36w9qxqTHQQciD3IC/9eZ/IqP8UzP6Or1KjxEYd4/VOZ5jsV1a7jNhpk7rSz/bq4yefFUnPN3zV3rB4o+JolxGXXnD/TmOeSpMPIj9bcBz7MIHN/Dggk8zjJVvfIwXFqt6fjYbYrU6CIbQqONzhAik84Aj5JNxF24TadK2Zg47wc4vnntXJZMjnLrVsavOn7IbZbcWgYUq7tm4C4MrG+ODz23Xrl3VpnM4LwMlLsZcXnYI3eH2lfLpmwttFCrSIB8oxwGHrG9puydB7OtQo0IP4ZfV57iPqpk4bu33c9y5jRtjJxakuKOc2jm9SLbvxyX2afs5pWquwiNmrUAHDaOz4QvhlcRrDwfUaU1OCku1ZLW0CfiKp+5tntq8eK5xXROg3RoOpxo2vL9qud11qfUjyR85vvaqvxS9WAKl2qKcLYVSQKkoqSAHHm9CFFABQjZ4IQEAmkiEASiUJKANJOEkAIlCSAvvXDUa/R1F7cHVqLrowdSqEYAxjzgqU7d3H5vP4K4NZVU/0RZsbn2b530T8o54qvtXzfjGyyJ+EbdE3bJM49vMLtWc92g3zNMuJrxgkxh7Lxx9qC0cxmePPcr61g2NhOj6ga0FluoNNzQNl7r5id7G+K+igG/09UGyI8wG4XfDDIXIrxNZ3e/t7hunP/u3EZDghziDeZg7yc10DStFm0q222apZw3zd76O0SHOn0wKlMhoLD6JMcYMjHVdSlNoo2us9oMvpMvExG0Tif2g/FZfW/sNuOGsacyN08LoNrKrWMNpVg6tZ2wAJPlKQ/UcTDmgA+gewtEq99EWunaKNOvRdtMe2Q6DMTvk3EGQRnKoDW/YhT0k8gAB9Ok8QAB6hafFhVh6lrc0WAt2y7Zqvlrtn4OQ0gNuvafW6y7iqt1TjKmqsVhsyT1weRrR0E+laTacadeL7vRe1oBaesCR25LTQ3m5XLrLtlP+j3zEufTDLx621tSIHzQ7vVMl/N+S83cxUanPU+hbDuHVtFvfh+z4JLH7Fq6FHxDU/c2z21eC5wXROg3/ABFU/c2vP9oudlfp9SPJHjL72qr8UvVjTKQTC2FUkE1GVJAIlKUFNAIppIQEEwkCiVAGkmhAJCEIAQhJAXhrMHxRQw9azf7TsCTz4mv9XQ+MrL+8GXzTwW/ayT8U2f61m658k6+4e33LQNXg+MbLj+cGfzSV1rb2eXj6Gp8S6NKk1mV6Yxs9qszv8LTZ65Nwyc7u7D81m/8AXan8A3P6dvAeH3JaMr7ekdJWc3hzbM8C+b6Ow85/R45DNYrOI07UuxsLTfH0zcz7vfTSxle75IkzaH0O/Rx0ja65aadWo+uBTDnODGl7/SkD0ocMJAxmMNZ6FPFn0HVq732hpxH0tGlccrj47l6+rt7nWrSrXuLgLSQGky1oL60gTh1cFHRejbM7QlCjaKws9Kp6W3tht5quqsG1UbEkAcbuxbG8ZT11j6EGt69aEWqhU+dSLP5HOP8A3AvD1Y6cNltrWk/B1yKTxfEkgU3YbnHuJW3a9KW1SslUGQDVbN5B2mscDl8kqqrDajRqMqgAmm9rwHTBLXNdBE4Xc7rtBb9vu8yHxLs1rUnea0yJgVmz629lSL+/v61WDXq7+m1lFXR9baaZDG1BG4th284RM8J340e8DmF5a7X2z2mwKmbZruZaehT8RVf3FsOA/a8Vz2r60a+NA1P3Fs/73D7VQxVyHUXJHmbx5uKnxP1EEyEIWZXGFk58VEIJQClARel2FAEpohCAghCFAGiEkIAQhCAEkIQF91qI0poVgpQX+Tplovuq0YDmQcJLXAfWnNVJ0d0n5paqVdzC7yTpLLmkmIIm+CJy3YL09XPTTzB5p1RtWeoZdAk03RHlGjfcACN4Ayg2L0h6H2PSbfOrPWayo6fhGQ5lXAem0G512Ig5gnC7a14xThPgzXJGl2Lp2G6SqW40Ds1KYpmmKjSRAptkOLYN7JiBjjn9tPWNT/pA23zd8GzihsB7Sdrb29qdnC6M18tfVbbgfRqUHibnB7hdMgwW3Z3SoN1YaQwil2VDkY3c96t5tn29mDHU9vSutlppPZZbM6nUeCNtzhcXCNvZa30nZSdwmYheD0j6X06+jrPYWU3tdS8iC5xBa7ydNzHbImRLjKf9WOkAb20SB+06pxGSi/Vvbx/Z08QCfKMgXkG8ni09R4LKCto4w15h5M/TPptRttioWdtKo2pTNNxc7ZLYFFzHBpmby4HAYTdgtQ0fQFStTpkXPqNbF3ynNC2E6utIj+wb/m0ssPWxm7r71lsPQbSdOqyo2zAmm9rh8NSvLHNI+VwWcZ0oRxGS8yNWX7UqNILTEEER6OEQd2XOC57tFjcKzqDZc4VDTAGLnB2yB2lXkbbUNLbZTPlC26m90bLoNz3NkQDvbPC+Vq2j9EWbRofa7XWa6pefKOBDWuN7hSEy5xk7pjACV56vSc2kdrZt7G1jNvXOML36nz9O7SLBojzafTextEQDeXSahxwjb71RC2Ppx0qfpCvtxs0mSKTN4acXO/WMCcoAviTri2HNlJybk+LAJpBSCEDapTuUQm5ykCJRKRKUoBkoSQgEEJIUAaEIQAhCSAEIQgBfdorTFosztqz1n0icdhxAdwc3Bw4FfEkgNxs2svSTQQazXz86mye9oHX1rO3WnpAfQ/5f3rR0KcjBvTta2kDuof5X3oGtW34xQG+6mcf5loyEyMG9HWrb5nZofyPj/ryT/rWt8zsUP5an/wCnPctEQmWMG7WjWhb3NIHkWTvawkj+dzh4LVtKaVr2l/lK9V1R2bjcODRg0cAviCaZAkykgqAATSTQEgglLBEoBITKSAJQkhAJCEIATSQgGkmkgBCEIAQhCAEIQgBCEIAUpUUygHKSSZQAhBQgBCEIBolIqTMec0BFCSaAEIKEB//Z" alt="NBA Logo">
+    </aside>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

@@ -1,38 +1,116 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta charset="utf-8">
-    <title>내 홈페이지</title>
-  </head>
-  <body>
-    <h1>여기에 내 홈페이지</h1>
-    <h2>여기에 내 홈페이지가 만들어질 예정</h2>
-    <h3>화이팅 해보자!!!</h3>
-    <h4> 잘 할 수 있겠어? </h4>
-    <hr color="red" size="40">
-    <h5> 레츠고 디디씨~~~</h5>
-    <hr color="blue" size="40">
-    <p>문단은 여기</p>
-    <p>레츠고 디디씨~~ 국보급 센터 출격준비 완료</p>
-    여기에 입력하고<br> 엔터키로 다음줄 하고 글을 쓰는중
-    <hr>
-    <div>띄어쓰기                앞에 진짜 많이 함</div>
-    띄어쓰기&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 많이 되겠지 이러면...
-    <strong>대한민국 국보급 센터</strong>
-    <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjA0MjNfNjkg%2FMDAxNjUwNjQ3Mzc4Mzk2.ycMPn8osyRQS1Sz1TwI_wLQKH92pySV-HOiynsV2hrEg.qHu3LNlxUPRJxe5Bb_-BqmDKiLDfCSGsfVeVAbA1CZQg.JPEG.01196292191%2F565651c9658d2d6c6b0bb6053f63dce9134336.jpg&type=ff332_332" width="300">
-   <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2F20121025_299%2Fyyop1500_1351139995324dMUq8_JPEG%2F1.jpg&type=a340"width="175">
-   <h1>
-    네이버 홈페이지로 이동하려면 
-    <a href="https://www.naver.com/">   <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2F20121025_299%2Fyyop1500_1351139995324dMUq8_JPEG%2F1.jpg&type=a340"width="50"></a>
-    를 클릭 </h1>
-    <body>
-      <h1>항목 태그는 같은 것을 쓴다</h1>
-      <ul>
-        <li>강아지</li>
-        <li>고양이</li>
-        <li>거북이</li>
-        <li>햄스터</li>
-      </ul>
-      <a href="page1.html">NEXT PAGE</a>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BASKETBALL MANIA</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* 기본 스타일 설정 */
+        body {
+            margin: 0;
+            padding-bottom: 50px; /* footer의 높이만큼 여백을 추가하여 겹치지 않도록 함 */
+            position: relative;
+            min-height: 100vh; /* 최소 높이를 화면 전체 높이로 설정 */
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4; /* 배경색 지정 */
+            overflow: hidden; /* 스크롤 숨기기 */
+        }
+        footer {
+            background-color: #000000; /* 검은색 배경 */
+            color: white; /* 흰색 텍스트 */
+            padding: 20px 0;
+            text-align: center;
+            position: fixed; /* 페이지 하단에 고정 */
+            width: 100%; /* 너비 100% */
+            bottom: 0; /* 하단에 정렬 */
+            left: 0;
+            z-index: 1000; /* 다른 요소 위에 표시되도록 설정 */
+        }
+        .long-banner {
+            background-color: #000000; /* 검은색 배경 */
+            color: white; /* 흰색 텍스트 */
+            padding: 10px;
+            text-align: center;
+        }
+        #video-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: vh; /* 화면 전체 높이에 맞게 설정 */
+        }
+        #video-section iframe {
+            width: 1500px; /* 영상 너비 */
+            height: 650px; /* 영상 높이 */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1><a onclick="showSection('video-section')">BASKETBALL MANIA</a></h1>
+        <nav>
+            <ul>
+                <li><a href="representative.html">대표자 소개</a></li>
+                <li><a href="position.html">포지션</a></li>
+                <li><a href="matching.html">매칭서비스</a></li>
+                <li><a href="customer-service.html">고객센터</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="video-section">
+        <iframe width="800" height="450" src="https://www.youtube.com/embed/EYEHUOpwNvE?autoplay=1&mute=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </section>
+
+    <div class="video-popup" onclick="closeVideoPopup()">
+        <div class="video-popup-content">
+            <span class="close-button" onclick="closeVideoPopup()">&times;</span>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/EYEHUOpwNvE?autoplay=0&mute=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <section id="representative">
+        <div class="representative-container">
+            <h2 class="representative-header">대표자 - 송민성</h2>
+            <div class="representative-content">
+                <p>안녕하십니까 대표 송민성입니다.</p>
+                <p>농구를 향한 여러분들의 진심에 큰 감명을 받았고 도움이 되고자 이 홈페이지를 개설하게 되었습니다.</p>
+                <p>여러분들의 진심어린 열정을 응원하며 더욱 더 도움을 드릴 수 있도록 발전, 또 발전된 모습 보여드리도록 하겠습니다.</p>
+                <p>감사합니다.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="position">
+        <h2>포지션 섹션</h2>
+        <div class="sub-banner" id="sub-banner">
+            <ul>
+                <li><a onclick="openVideoPopup()">PG</a></li>
+                <li><a onclick="openVideoPopup()">SG</a></li>
+                <li><a onclick="openVideoPopup()">SF</a></li>
+                <li><a onclick="openVideoPopup()">PF</a></li>
+                <li><a onclick="openVideoPopup()">C</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>매칭서비스 섹션</h2>
+        <p>이곳은 홈페이지의 매칭서비스 섹션입니다.</p>
+    </section>
+
+    <section id="customer-service">
+        <h2>고객센터 섹션</h2>
+        <p>이곳은 홈페이지의 고객센터 섹션입니다.</p>
+    </section>
+
+    <footer>
+        <div class="long-banner">
+            <!-- 내용 추가 -->
+        </div>
+        <p>&copy; ♠ FOREVER BASKETBALL ♠</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
 </html>

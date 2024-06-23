@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>매칭 결과</title>
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" integrity="sha512-6gLWz7sZ2sLD6vqg0pU9/bWfjk0vidHvhUnT9aSPJj/U4u28Tv2XWfNmx0lgpmENbVvy4T/lDInrhcInIi7t8w==" crossorigin=""/>
+    <style>
+        /* 기본 스타일 설정 */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #000000;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        header h1 a {
+            color: white;
+            text-decoration: none;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        .representative-container {
+            padding: 20px;
+            text-align: center;
+        }
+        .representative-header {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        #mapid {
+            height: 400px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #000000;
+            color: white;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* 추가한 CSS */
+        .loading-message {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            margin-top: 1em; /* 로딩 메시지 상단 여백 */
+            position: relative; /* 상대적 위치 설정 */
+            background-color: #000000; /* 배경색 검은색으로 설정 */
+            color: white; /* 텍스트 색상 흰색으로 설정 */
+        }
+
+        .loading-spinner {
+            display: inline-block;
+            width: 50px; /* 동그라미 크기 */
+            height: 50px; /* 동그라미 크기 */
+            border: 4px solid #ffffff;
+            border-radius: 50%;
+            border-top-color: #000000;
+            animation: spin 1s ease-in-out infinite; /* 회전 애니메이션 적용 */
+            position: absolute; /* 절대적 위치 설정 */
+            bottom: -20px; /* 아이콘 위치 조정 */
+        }
+
+        .loading-text {
+            margin-top: 1em; /* 텍스트와 동그라미 사이 간격 조정 */
+            font-size: 1.2em; /* 텍스트 크기 조정 */
+            position: relative; /* 상대적 위치 설정 */
+            z-index: 1; /* 텍스트가 앞으로 나오도록 설정 */
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1><a href="index.html">BASKETBALL MANIA</a></h1>
+        <nav>
+            <ul>
+                <li><a href="representative.html">대표자 소개</a></li>
+                <li><a href="position.html">포지션</a></li>
+                <li><a href="matching.html">매칭 서비스</a></li>
+                <li><a href="customer-service.html">고객센터</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="matching" class="representative-container">
+            <div class="representative-header">매칭 결과</div>
+            <div class="representative-content">
+                <!-- Leaflet 맵을 표시할 div -->
+                <div id="mapid"></div>
+                <!-- 로딩 메시지와 동그라미 아이콘 -->
+                <div id="result-message" class="loading-message">
+                    <span class="loading-text">매칭 결과를 불러오는 중입니다...</span>
+                    <span class="loading-spinner"></span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; ♠ FOREVER BASKETBALL ♠</p>
+    </footer>
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js" integrity="sha512-gZwIG9G2ZQlLMp39gRoBujR7W/3+MU3v3PvaXMF1DN6rm81J2fn4tOJ89v7nXWhDcEe4xXYs0qU1OzYxRTmQ0A==" crossorigin=""></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
+
+
+
+

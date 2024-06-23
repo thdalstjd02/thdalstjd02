@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>매칭 서비스</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script> <!-- scripts.js를 비동기로 로드 -->
+    <style>
+        /* 기본 스타일 설정 */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #000000;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        header h1 a {
+            color: white;
+            text-decoration: none;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        .representative-container {
+            padding: 20px;
+        }
+        .representative-header {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group select {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            color: black;
+            background-color: white;
+            border: 2px solid black;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #ffffff;
+        }
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+            padding: 10px 0;
+            background-color: #000000;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1><a href="index.html">BASKETBALL MANIA</a></h1>
+        <nav>
+            <ul>
+                <li><a href="representative.html">대표자 소개</a></li>
+                <li><a href="position.html">포지션</a></li>
+                <li><a href="matching.html">매칭 서비스</a></li>
+                <li><a href="customer-service.html">고객센터</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="matching" class="representative-container">
+            <div class="representative-header">매칭 서비스</div>
+            <div class="representative-content">
+                <div class="representative-text">
+                    <p>매칭을 원하는 지역과 포지션을 선택하세요.</p>
+                    <form id="matching-form">
+                        <div class="form-group">
+                            <label for="region">지역 선택</label>
+                            <select id="region">
+                                <option value="서울특별시">서울특별시</option>
+                                <option value="경기도">경기도</option>
+                                <option value="부산광역시">부산광역시</option>
+                                <option value="대구광역시">대구광역시</option>
+                                <option value="인천광역시">인천광역시</option>
+                                <option value="광주광역시">광주광역시</option>
+                                <option value="대전광역시">대전광역시</option>
+                                <option value="울산광역시">울산광역시</option>
+                                <option value="세종특별자치시">세종특별자치시</option>
+                                <option value="강원도">강원도</option>
+                                <option value="충청북도">충청북도</option>
+                                <option value="충청남도">충청남도</option>
+                                <option value="전라북도">전라북도</option>
+                                <option value="전라남도">전라남도</option>
+                                <option value="경상북도">경상북도</option>
+                                <option value="경상남도">경상남도</option>
+                                <option value="제주특별자치도">제주특별자치도</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="position">포지션 선택</label>
+                            <select id="position">
+                                <option value="PG">PG</option>
+                                <option value="SG">SG</option>
+                                <option value="SF">SF</option>
+                                <option value="PF">PF</option>
+                                <option value="C">C</option>
+                            </select>
+                        </div>
+                        <a href="matching-result.html" id="matching-button" class="button">매칭 찾기</a>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; ♠ FOREVER BASKETBALL ♠</p>
+    </footer>
+</body>
+</html>

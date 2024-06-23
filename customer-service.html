@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>고객센터</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* 기본 스타일 설정 */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #000000;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        header h1 a {
+            color: white;
+            text-decoration: none;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        .representative-container {
+            padding: 20px;
+        }
+        .representative-header {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .representative-content {
+            margin-bottom: 150px; /* footer와 겹치지 않도록 여백 설정 */
+        }
+        .representative-text {
+            line-height: 1.6;
+        }
+        .website-logo {
+            display: inline-block;
+            width: 30px; /* 로고 이미지의 너비 */
+            height: auto; /* 자동으로 높이 조절 */
+            vertical-align: middle; /* 세로 중앙 정렬 */
+            margin-right: 5px; /* 로고 이미지 사이 간격 */
+        }
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+            padding: 10px 0;
+            background-color: #000000;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1><a href="index.html">BASKETBALL MANIA</a></h1>
+        <nav>
+            <ul>
+                <li><a href="representative.html">대표자 소개</a></li>
+                <li><a href="position.html">포지션</a></li>
+                <li><a href="matching.html">매칭 서비스</a></li>
+                <li><a href="customer-service.html">고객센터</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="customer-service" class="representative-container">
+            <div class="representative-header">고객센터</div>
+            <div class="representative-content">
+                <div class="representative-text">
+                    <p>문의사항이 있으시다면 아래 메일 주소를 통해 문의하시길 바랍니다.</p>
+                    <p>메일 주소: <a href="mailto:kevin415@naver.com">kevin415@naver.com</a></p>
+                    <p>
+                        <a href="https://www.daum.net">
+                            <img src="https://www.daum.net/favicon.ico" alt="다음" class="website-logo">
+                        </a>
+                        <a href="https://www.naver.com">
+                            <img src="https://www.naver.com/favicon.ico" alt="네이버" class="website-logo">
+                        </a>
+                        <a href="https://www.google.com">
+                            <img src="https://www.google.com/favicon.ico" alt="구글" class="website-logo">
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; ♠ FOREVER BASKETBALL ♠</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
